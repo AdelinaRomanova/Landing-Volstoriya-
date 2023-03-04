@@ -1,0 +1,423 @@
+/* fonts */
+
+/* regular */
+@font-face {
+    font-family: "Unbounded regular";
+    src: local("Unbounded regular"), url(fonts/Unbounded-Regular.ttf);
+  }
+
+/* regular */
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: local('Montserrat Regular'), url(/fonts/Montserrat-Regular.ttf);
+  }
+
+body{
+    padding: 0;
+    margin: auto 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* title */
+
+.title {
+    position: relative;
+    padding-top: 3.5%;
+
+    margin-top: 10%;
+}
+
+.title-text {
+    font-family: Unbounded regular;
+    text-align: center;
+    font-size: 32px;
+    
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title-circle {
+    border-radius: 50%;
+    background-color: #D6E0C8;
+
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+
+    top: 5%;
+    left: 32%
+    
+}
+
+hr {
+    width: 100px;
+    height: 2px;
+    background: black;
+    border: none;
+    margin-top: -1%;
+
+    position: relative;
+}
+
+/* our program */
+
+.wrapper .list_program {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1440px;
+    position: relative;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.arrow {
+    height: 45px;
+    width: 20px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+
+    position: absolute;
+}
+
+.left {
+    left: -23px;
+}
+
+.rigth {
+    right: -23px;
+}
+
+.list_program {
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.list_program .program:first-child {
+    margin-left: 3%;
+}
+
+.list_program .program:last-child {
+    margin-right: 3%;
+}
+
+
+.program {
+    max-width: 280px;
+    margin-top: 2%;
+
+    margin-left: 7%;
+
+    transition: 1.2s;
+}
+
+.program:hover{
+    scale: 1.03;
+}
+
+.program_circle {
+    border: 3px solid #D6E0C8;
+    border-radius: 50%;
+
+    width: 270px;
+    height: 270px;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    position: relative;
+    transition: 0.7s;
+}
+
+.program_circle:hover {
+    box-shadow: 0.4em 0.4em 3px rgba(122, 122, 122, 0.5);
+}
+
+
+.program_circle_photo {
+    width: 230px;
+    height: 230px;
+}
+
+.program_text {
+    font-family: Montserrat Regular;
+    font-size: 20px;
+    margin-top: 5%;
+
+    text-align: center;
+}
+
+.program_number {
+    border: 3px solid #D6E0C8;
+    background-color: white;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    position: absolute;
+
+    margin-left: -75%;
+    margin-top: -50%;
+}
+
+.program_number_circle {
+    background-color: #D6E0C8;
+    border-radius: 50%;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+}
+
+.program_number_circle_figure {
+    font-family: Montserrat regular;
+    font-size: 40px;
+}
+
+/* our partners */
+
+.our_partners_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    position: relative;
+
+    margin-top: 8%;
+}
+
+.our_partners_list_bg {
+    position: absolute;
+
+    top: calc(20%); 
+    left: 50%;
+    width: 100vw; 
+    margin-left: -50vw;
+
+    height: 100px;
+}
+
+.our_partners_list_logo {
+    position: relative;
+}
+
+/* footer */
+
+footer {
+    background-color: #272727;
+    margin-top: 7%;
+}
+
+.footer_wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3% 0;
+
+}
+
+.volstoriya_logo {
+    height: 70px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.network_text {
+    font-family: Unbounded regular;
+    font-size: 14px;
+
+    color: white;
+}
+
+.network_link_img {
+    margin-top: 6%;
+
+    height: 50px;
+    width: auto;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+    color: white;
+}
+
+.contacts_text{
+    font-family: Unbounded regular;
+    font-size: 14px;
+}
+
+.contacts_email {
+    font-family:  Montserrat Regular;
+    font-size: 14px;
+
+    margin-top: 10%;
+}
+
+@media (max-width: 1105px) {
+    .wrapper {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .list_program .program:first-child {
+        margin-left: 9%;
+    }
+    
+    .list_program .program:last-child {
+        margin-right: 5%;
+    }
+    
+    .program {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 890px) {
+    .wrapper {
+        max-width: 650px;
+    }
+
+    .list_program .program:first-child {
+        margin-left: 3%;
+    }
+    
+    /* .list_program .program:last-child {
+        margin-right: 5%;
+    } */
+    
+    .program {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 715px) {
+
+    .title-text{
+        font-size: 23px;
+        padding: 0 5%;
+    }
+    .wrapper {
+        max-width: 310px;
+        margin: auto;
+    }
+
+    .list_program .program:first-child {
+        margin-left: 18px;
+    }
+    
+    
+    .program {
+        margin-left: 50%;
+    }
+
+    .title-circle{
+        width: 120px;
+        height: 110px;
+
+        position: absolute;
+
+        top: -5%;
+        left: 30%
+    }
+
+    .our_partners_list_logo {
+        width: 32%;
+        height: auto;
+    }
+
+    .volstoriya_logo {
+        height: 40px;
+    }
+
+    .network_text {
+        font-size: 10px;
+    }
+    
+    .network_link_img {
+        height: 30px;
+    }
+    
+    .contacts_text{
+        font-size: 10px;
+    }
+    
+    .contacts_email {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .our_partners_list_bg{
+        height: 60px;
+    }
+    .footer_wraper {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 5% 0;
+    }
+    .volstoriya_logo {
+        height: auto;
+        width: 120px;
+
+        margin: 2% 0;
+    }
+
+    .network_text {
+        margin-top: 5%;
+        font-size: 12px;
+    }
+    
+    .network_link_img {
+        height: 30px;
+    }
+    
+    .contacts_text{
+        margin-top: 7%;
+        font-size: 12px;
+    }
+    
+    .contacts_email {
+        font-size: 12px;
+        margin-top: 2%;
+    }
+}
